@@ -22,5 +22,16 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    rollupOptions: {
+      external: [
+        'next-themes',
+        '@radix-ui/react-tooltip',
+        'sonner',
+        'vaul',
+        'cmdk',
+        'date-fns',
+        'react-day-picker'
+      ]
+    }
   },
 }));
